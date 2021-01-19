@@ -1,26 +1,13 @@
 package io.duotech.step_definitions;
 
-import static org.junit.Assert.*;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-
-import com.github.javafaker.Faker;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.duotech.beans.User;
-import io.duotech.pages.CreateAccountPage;
 import io.duotech.pages.HomePage;
-import io.duotech.pages.LoginPage;
-import io.duotech.pages.MyAccountPage;
+import io.duotech.pages.RegisterPage;
 import io.duotech.utilities.ConfigReader;
 import io.duotech.utilities.Driver;
 import io.duotech.utilities.LoggerUtils;
@@ -29,159 +16,61 @@ import io.duotech.utilities.LoggerUtils;
 public class LoginStepDefs {
 	
 	
-	Logger logger = LoggerUtils.getLogger(LoginStepDefs.class);
+Logger logger = LoggerUtils.getLogger(LoginStepDefs.class);
 	
-	
-	
-	
-	
-	@Given("I am on the homepage")
-	public void i_am_on_the_homepage() {
-		
+	@Given("Client in the home page")
+	public void client_in_the_home_page() {
 		Driver.getDriver().get(ConfigReader.getConfiguration("url"));
 		logger.info("Navigating to a homepage");
-			
 	}
 
-	@When("I click on Sign in")
-	public void i_click_on_Sign() {
-	    HomePage homepage = new HomePage();
-	    logger.info("Clicking on Sign in");
-	    homepage.signInLink.click();
-	}
-
-	@Then("The login page title should be Login - My Store")
-	public void the_login_page_title_should_be_Login_My_Store() {
-	   
+	@Then("Verify home page title")
+	public void verify_home_page_title() {
 		logger.info("Getting the page title");
 		String actual = Driver.getDriver().getTitle();
-	   String expected = "Login - My Store";
+	   String expected = "Login - Loan Application";
 	   logger.info("Verifying the title");
-	   
-	   try {
-		assertEquals(expected, actual);
-		logger.info("Title Verification passed");
-		   
-	} catch (AssertionError e) {
-		 
-	//	 logger.error("Title Verification failed" ,e);
-		logger.error("Title Verification failed");
-		logger.error(e.toString());
-		throw e; //re-throw my error so that my test fails
-	}
-	   
-	  
-	   
 	}
 	
-	@Then("I should be able to see email, password boxes and login button")
-	public void i_should_be_able_to_see_email_password_boxes_and_login_button() {
-	   LoginPage loginPage = new LoginPage();
-	   assertTrue(loginPage.emailInputBox.isDisplayed());
-	   assertTrue(loginPage.passwordInputBox.isDisplayed());
-	   assertTrue(loginPage.signInButton.isDisplayed());
+	@When("Client click the Sign up button")
+	public void client_click_the_Sign_up_button() {
+		HomePage hp = new HomePage();
+	    logger.info("Client clicks the Sign Up Link");
+	    hp.signUpLink.click();
+	}
 
-	   
+	@Then("Page title should be Register - Create an Account")
+	public void page_title_should_be_Register_Create_an_Account() {
+		logger.info("Getting the page title");
+		String actual = Driver.getDriver().getTitle();
+	   String expected = "Register - Create an Account";
+	   logger.info("Verifying the title");
 	}
 	
-	@When("I enter duotech@gmail.com as email, dt123 as password, and click login")
-	public void i_enter_duotech_gmail_as_email_dt123_as_password_and_click_login() {
-		   LoginPage loginPage = new LoginPage();
+	@When("Client will fill out the sign up form")
+	public void client_will_fill_out_the_sign_up_form() {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client entered first name");
+		rp.firstNameInput.sendKeys("David");
+		logger.info("Client entered last name");
+		rp.lastNameInput.sendKeys("Beckham");
+		logger.info("Client entered valid email");
+		rp.emailInput.sendKeys("db7@gmail.com");
+		logger.info("Client entered password");
+		rp.PasswordInput.sendKeys("David723");
+		
+	}
 
-		   loginPage.emailInputBox.sendKeys("duotech@gmail.com");
-		   loginPage.passwordInputBox.sendKeys("dt123");
-		   loginPage.signInButton.click();
+	@When("Client clicks the Sign up button")
+	public void client_clicks_the_Sign_up_button() {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client clicks the sign up button");
+		rp.registerButton.click();
 	}
-	
-	@When("I enter {string} as email, {string} as password, and click login")
-	public void i_enter_as_email_as_password_and_click_login(String email, String pass) {
-			LoginPage loginPage = new LoginPage();
 
-			loginPage.emailInputBox.sendKeys(email);
-			   loginPage.passwordInputBox.sendKeys(pass);
-			   loginPage.signInButton.click();
-	}
-	
-	
-	
-
-	@Then("I should be able to land on welcome page and read welcome message")
-	public void i_should_be_able_to_land_on_welcome_page_and_read_welcome_message() {
-	   String welcomeMessage = "Welcome to your account. Here you can manage all of your personal information and orders.";
-	   MyAccountPage myaccountpage = new MyAccountPage();
-	   String actual = myaccountpage.welcomeMessage.getText();
-	   assertEquals(welcomeMessage, actual);
-	
-	}
-	
-	
-	@When("I enter the following credentials, I should be able to login")
-	public void i_enter_the_following_credentials_I_should_be_able_to_login(Map<String, String> combinations) {
-	    LoginPage loginPage = new LoginPage();
-	    MyAccountPage myAccountPage = new MyAccountPage();
-	   
-	    Set<Entry<String, String>> entrySet = combinations.entrySet();
-	    
-	    for (Entry<String, String> entry : entrySet) {
-	    	String email = entry.getKey();
-	    	String password = entry.getValue();
-	    	loginPage.emailInputBox.sendKeys(email);
-	    	loginPage.passwordInputBox.sendKeys(password);
-	    	loginPage.signInButton.click();
-	    	
-	    	i_should_be_able_to_land_on_welcome_page_and_read_welcome_message();
-	    	
-	    	myAccountPage.logOutLink.click();
-		}
-	    
-	    
-	    
-		
-	}
-	
-	
-	@When("I enter valid email and click Create Account")
-	public void i_enter_valid_email_and_click_Create_Account() {
-		
-		LoginPage lp = new LoginPage();
-		lp.createAccountEmail.sendKeys(new Faker().internet().emailAddress());
-	    lp.createAccountButton.click();
-	}
-	
-	
-	@When("I should be able to pass the following data and click on register and see the name")
-	public void i_should_be_able_to_pass_the_following_data(List<User> list) {
-		
-		CreateAccountPage cp = new CreateAccountPage();
-		MyAccountPage myAccountpage = new MyAccountPage();
-		
-		
-		cp.firstName.sendKeys(list.get(0).getFirstName());
-		cp.lastName.sendKeys(list.get(0).getLastName());
-		cp.password.sendKeys(list.get(0).getPassword());
-		cp.selectDOB();
-		cp.address.sendKeys(list.get(0).getAddress());
-		cp.city.sendKeys(list.get(0).getCity());
-		cp.selectState();
-		cp.zip.sendKeys(list.get(0).getZip());
-		cp.phoneNo.sendKeys(list.get(0).getPhone());
-		
-		cp.registerButton.click();
-		
-		String expected = list.get(0).getFirstName() + " " + list.get(0).getLastName();
-		String actual = myAccountpage.customerName.getText();
-		assertEquals(expected, actual);
-		
-		myAccountpage.logOutLink.click();
-		
-	}
-	
-	
-	@When("I enter valid email {string} and click Create Account")
-	public void i_enter_valid_email_and_click_Create_Account(String string) {
-		LoginPage lp = new LoginPage();
-		lp.createAccountEmail.sendKeys(string);
-	    lp.createAccountButton.click();
+	@Then("Client should be successfully registered")
+	public void client_should_be_successfully_registered() {
+	    System.out.println("SUCCSSES");
 	}
 	
 	

@@ -131,7 +131,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>E-commerce Project</projectName>
+							<projectName>Loan Appilication</projectName>
 
 							<!-- output directory for the generated report -->
 							<outputDirectory>${project.build.directory}/pretty-html-report</outputDirectory>
