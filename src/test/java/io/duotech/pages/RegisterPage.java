@@ -26,5 +26,8 @@ public class RegisterPage {
 	
 	@FindBy (id = "register")
 	public WebElement registerButton;
+	
+	@FindBy (id = "emailerror")
+	public WebElement emailUsedText;
 
 }

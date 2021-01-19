@@ -74,7 +74,13 @@ Logger logger = LoggerUtils.getLogger(LoginStepDefs.class);
 	}
 	
 	
-
+	@Then("Client should be get error message")
+	public void client_should_be_get_error_message() {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client gets error message");
+		String actual = rp.emailUsedText.getText();
+		String expected = "This email already used";
+	}
 		
 
 

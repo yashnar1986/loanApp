@@ -22,7 +22,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 //		,strict = true
 //		,dryRun = true
 		,monochrome =true
-//		,stepNotifications = true
+		,stepNotifications = true
 //		,snippets = SnippetType.CAMELCASE
 		)
 public class CukeRunner {
