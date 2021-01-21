@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.duotech.pages.AccountPage;
 import io.duotech.pages.HomePage;
 import io.duotech.pages.RegisterPage;
 import io.duotech.utilities.ConfigReader;
@@ -81,7 +82,61 @@ Logger logger = LoggerUtils.getLogger(LoginStepDefs.class);
 		String actual = rp.emailUsedText.getText();
 		String expected = "This email already used";
 	}
+	
+	@When("Client enters first name {string}")
+	public void client_enters_first_name(String fname) {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client entered first name " + fname);
+		rp.firstNameInput.sendKeys(fname);
+	}
 		
+	@When("Client enters last name {string}")
+	public void client_enters_last_name(String lname) {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client entered last name " + lname);
+		rp.lastNameInput.sendKeys(lname);
+	}
 
+	@When("Client enters email address {string}")
+	public void client_enters_email_address(String email) {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client entered valid email " + email);
+		rp.emailInput.sendKeys(email);
+	}
+
+	@When("Client enters password {string}")
+	public void client_enters_password(String password) {
+		RegisterPage rp = new RegisterPage();
+		logger.info("Client entered password " + password);
+		rp.PasswordInput.sendKeys(password);
+	}
+	
+	@When("Client enters valid email and password")
+	public void client_enters_valid_email_and_password() {
+		HomePage hp = new HomePage();
+	    logger.info("Client enters valid email");
+	    hp.emailField.sendKeys("db7@gmail.com");
+	    logger.info("Client enters valid password");
+	    hp.passwordField.sendKeys("David723");
+	}
+
+	@When("Client clicks login button")
+	public void client_clicks_login_button() {
+		HomePage hp = new HomePage();
+	    logger.info("Client clicks login button");
+	    hp.loginButton.click();
+	}
+
+	@Then("Client should be able to enter to his account page")
+	public void client_should_be_able_to_enter_to_his_account_page() {
+	    AccountPage ap = new AccountPage();
+	    logger.info("Client account page opens");
+	    String actual = ap.accountHolderName.getText();
+		String expected = "David Beckham";
+		logger.info("Verifying name of acoount holder");
+		ap.mortgageAppMenu.click();
+		ap.workingWithRealtorCheckbox.click();
+	    
+	}
 
 }

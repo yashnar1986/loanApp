@@ -16,7 +16,14 @@ public class HomePage {
 	
 	@FindBy (linkText = "Sign up")
 	public WebElement signUpLink;
-
 	
+	@FindBy (id = "exampleInputEmail1")
+	public WebElement emailField;
+
+	@FindBy (id = "exampleInputPassword1")
+	public WebElement passwordField;
+	
+	@FindBy (name = "login")
+	public WebElement loginButton;
 
 }

@@ -1,22 +1,6 @@
-2021-01-19 11:53:11 INFO  LoginStepDefs:24 - Navigating to a homepage
-2021-01-19 11:53:11 INFO  LoginStepDefs:29 - Getting the page title
-2021-01-19 11:53:11 INFO  LoginStepDefs:32 - Verifying the title
-2021-01-19 11:53:11 INFO  LoginStepDefs:24 - Navigating to a homepage
-2021-01-19 11:53:11 INFO  LoginStepDefs:38 - Client clicks the Sign Up Link
-2021-01-19 11:53:12 INFO  LoginStepDefs:44 - Getting the page title
-2021-01-19 11:53:12 INFO  LoginStepDefs:47 - Verifying the title
-2021-01-19 11:53:12 INFO  LoginStepDefs:24 - Navigating to a homepage
-2021-01-19 11:53:12 INFO  LoginStepDefs:38 - Client clicks the Sign Up Link
-2021-01-19 11:53:12 INFO  LoginStepDefs:53 - Client entered first name
-2021-01-19 11:53:12 INFO  LoginStepDefs:55 - Client entered last name
-2021-01-19 11:53:13 INFO  LoginStepDefs:57 - Client entered valid email
-2021-01-19 11:53:13 INFO  LoginStepDefs:59 - Client entered password
-2021-01-19 11:53:13 INFO  LoginStepDefs:67 - Client clicks the sign up button
-2021-01-19 11:53:13 INFO  LoginStepDefs:24 - Navigating to a homepage
-2021-01-19 11:53:13 INFO  LoginStepDefs:38 - Client clicks the Sign Up Link
-2021-01-19 11:53:14 INFO  LoginStepDefs:53 - Client entered first name
-2021-01-19 11:53:14 INFO  LoginStepDefs:55 - Client entered last name
-2021-01-19 11:53:14 INFO  LoginStepDefs:57 - Client entered valid email
-2021-01-19 11:53:14 INFO  LoginStepDefs:59 - Client entered password
-2021-01-19 11:53:15 INFO  LoginStepDefs:67 - Client clicks the sign up button
-2021-01-19 11:53:15 INFO  LoginStepDefs:80 - Client gets error message
+2021-01-20 22:56:46 INFO  LoginStepDefs:25 - Navigating to a homepage
+2021-01-20 22:56:46 INFO  LoginStepDefs:117 - Client enters valid email
+2021-01-20 22:56:46 INFO  LoginStepDefs:119 - Client enters valid password
+2021-01-20 22:56:46 INFO  LoginStepDefs:126 - Client clicks login button
+2021-01-20 22:56:49 INFO  LoginStepDefs:133 - Client account page opens
+2021-01-20 22:56:49 INFO  LoginStepDefs:136 - Verifying name of acoount holder
