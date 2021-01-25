@@ -1,6 +1,30 @@
-2021-01-20 22:56:46 INFO  LoginStepDefs:25 - Navigating to a homepage
-2021-01-20 22:56:46 INFO  LoginStepDefs:117 - Client enters valid email
-2021-01-20 22:56:46 INFO  LoginStepDefs:119 - Client enters valid password
-2021-01-20 22:56:46 INFO  LoginStepDefs:126 - Client clicks login button
-2021-01-20 22:56:49 INFO  LoginStepDefs:133 - Client account page opens
-2021-01-20 22:56:49 INFO  LoginStepDefs:136 - Verifying name of acoount holder
+2021-01-25 11:18:11 INFO  LoginStepDefs:35 - Navigating to a homepage
+2021-01-25 11:18:11 INFO  LoginStepDefs:181 - Client enters valid email
+2021-01-25 11:18:12 INFO  LoginStepDefs:183 - Client enters valid password
+2021-01-25 11:18:12 INFO  LoginStepDefs:164 - Client clicks login button
+2021-01-25 11:18:15 INFO  LoginStepDefs:190 - Client account page opens
+2021-01-25 11:18:15 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
+2021-01-25 11:18:16 INFO  LoginStepDefs:35 - Navigating to a homepage
+2021-01-25 11:18:16 INFO  LoginStepDefs:181 - Client enters valid email
+2021-01-25 11:18:16 INFO  LoginStepDefs:183 - Client enters valid password
+2021-01-25 11:18:16 INFO  LoginStepDefs:164 - Client clicks login button
+2021-01-25 11:18:18 INFO  LoginStepDefs:190 - Client account page opens
+2021-01-25 11:18:18 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
+2021-01-25 11:18:19 INFO  LoginStepDefs:35 - Navigating to a homepage
+2021-01-25 11:18:19 INFO  LoginStepDefs:181 - Client enters valid email
+2021-01-25 11:18:19 INFO  LoginStepDefs:183 - Client enters valid password
+2021-01-25 11:18:19 INFO  LoginStepDefs:164 - Client clicks login button
+2021-01-25 11:18:21 INFO  LoginStepDefs:190 - Client account page opens
+2021-01-25 11:18:21 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
+2021-01-25 11:18:22 INFO  LoginStepDefs:35 - Navigating to a homepage
+2021-01-25 11:18:22 INFO  LoginStepDefs:181 - Client enters valid email
+2021-01-25 11:18:22 INFO  LoginStepDefs:183 - Client enters valid password
+2021-01-25 11:18:22 INFO  LoginStepDefs:164 - Client clicks login button
+2021-01-25 11:18:23 INFO  LoginStepDefs:190 - Client account page opens
+2021-01-25 11:18:23 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
+2021-01-25 11:18:24 INFO  LoginStepDefs:35 - Navigating to a homepage
+2021-01-25 11:18:24 INFO  LoginStepDefs:181 - Client enters valid email
+2021-01-25 11:18:25 INFO  LoginStepDefs:183 - Client enters valid password
+2021-01-25 11:18:25 INFO  LoginStepDefs:164 - Client clicks login button
+2021-01-25 11:18:27 INFO  LoginStepDefs:190 - Client account page opens
+2021-01-25 11:18:27 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
