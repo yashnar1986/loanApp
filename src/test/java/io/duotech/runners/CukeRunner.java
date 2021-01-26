@@ -16,11 +16,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		
 		},
 					
-		tags = "@loan and @db", // "@smoke and @test"
+		tags = "@loan", //"@loan and @db", // "@smoke and @test"
 		features = "src/test/resources/io/duotech/features",
 		glue = "io/duotech/step_definitions"
 //		,strict = true
-//		,dryRun = true
+		,dryRun = true
 		,monochrome =true
 		,stepNotifications = true
 //		,snippets = SnippetType.CAMELCASE

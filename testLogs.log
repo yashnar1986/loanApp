@@ -1,30 +1,12 @@
-2021-01-25 11:18:11 INFO  LoginStepDefs:35 - Navigating to a homepage
-2021-01-25 11:18:11 INFO  LoginStepDefs:181 - Client enters valid email
-2021-01-25 11:18:12 INFO  LoginStepDefs:183 - Client enters valid password
-2021-01-25 11:18:12 INFO  LoginStepDefs:164 - Client clicks login button
-2021-01-25 11:18:15 INFO  LoginStepDefs:190 - Client account page opens
-2021-01-25 11:18:15 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
-2021-01-25 11:18:16 INFO  LoginStepDefs:35 - Navigating to a homepage
-2021-01-25 11:18:16 INFO  LoginStepDefs:181 - Client enters valid email
-2021-01-25 11:18:16 INFO  LoginStepDefs:183 - Client enters valid password
-2021-01-25 11:18:16 INFO  LoginStepDefs:164 - Client clicks login button
-2021-01-25 11:18:18 INFO  LoginStepDefs:190 - Client account page opens
-2021-01-25 11:18:18 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
-2021-01-25 11:18:19 INFO  LoginStepDefs:35 - Navigating to a homepage
-2021-01-25 11:18:19 INFO  LoginStepDefs:181 - Client enters valid email
-2021-01-25 11:18:19 INFO  LoginStepDefs:183 - Client enters valid password
-2021-01-25 11:18:19 INFO  LoginStepDefs:164 - Client clicks login button
-2021-01-25 11:18:21 INFO  LoginStepDefs:190 - Client account page opens
-2021-01-25 11:18:21 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
-2021-01-25 11:18:22 INFO  LoginStepDefs:35 - Navigating to a homepage
-2021-01-25 11:18:22 INFO  LoginStepDefs:181 - Client enters valid email
-2021-01-25 11:18:22 INFO  LoginStepDefs:183 - Client enters valid password
-2021-01-25 11:18:22 INFO  LoginStepDefs:164 - Client clicks login button
-2021-01-25 11:18:23 INFO  LoginStepDefs:190 - Client account page opens
-2021-01-25 11:18:23 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
-2021-01-25 11:18:24 INFO  LoginStepDefs:35 - Navigating to a homepage
-2021-01-25 11:18:24 INFO  LoginStepDefs:181 - Client enters valid email
-2021-01-25 11:18:25 INFO  LoginStepDefs:183 - Client enters valid password
-2021-01-25 11:18:25 INFO  LoginStepDefs:164 - Client clicks login button
-2021-01-25 11:18:27 INFO  LoginStepDefs:190 - Client account page opens
-2021-01-25 11:18:27 INFO  LoginStepDefs:198 - Verifying name of acoount holder with data base
+2021-01-25 18:11:52 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-01-25 18:11:52 INFO  LoginStepDefs:70 - Client enters valid email
+2021-01-25 18:11:52 INFO  LoginStepDefs:72 - Client enters valid password
+2021-01-25 18:11:52 INFO  LoginStepDefs:79 - Client clicks login button
+2021-01-25 18:11:55 INFO  PageOneFillingStepDefs:22 - Client opens the mortgage application
+2021-01-25 18:11:58 INFO  PageOneFillingStepDefs:38 - Client fills preapproval details with realtor and loan officer
+2021-01-25 18:11:58 INFO  PageOneFillingStepDefs:39 - Client entered realtor details
+2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:41 - Client fills estimated home price field
+2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:43 - Clients down payment amount
+2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:45 - Client chooses down payment source
+2021-01-25 18:12:00 INFO  PageOneFillingStepDefs:48 - Clients additional founds
+2021-01-25 18:12:00 INFO  PageOneFillingStepDefs:54 - Client clicks next button

@@ -18,7 +18,6 @@ public class AccountPage {
 	@FindBy (xpath = "//span[.='Mortgage Application']")
 	public WebElement mortgageAppMenu;
 	
-	@FindBy (xpath = "//label[@xpath='1']")
-	public WebElement workingWithRealtorCheckbox;
+	
 
 }
