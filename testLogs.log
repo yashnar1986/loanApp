@@ -1,12 +1,15 @@
-2021-01-25 18:11:52 INFO  MainPageStepDefs:22 - Navigating to a homepage
-2021-01-25 18:11:52 INFO  LoginStepDefs:70 - Client enters valid email
-2021-01-25 18:11:52 INFO  LoginStepDefs:72 - Client enters valid password
-2021-01-25 18:11:52 INFO  LoginStepDefs:79 - Client clicks login button
-2021-01-25 18:11:55 INFO  PageOneFillingStepDefs:22 - Client opens the mortgage application
-2021-01-25 18:11:58 INFO  PageOneFillingStepDefs:38 - Client fills preapproval details with realtor and loan officer
-2021-01-25 18:11:58 INFO  PageOneFillingStepDefs:39 - Client entered realtor details
-2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:41 - Client fills estimated home price field
-2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:43 - Clients down payment amount
-2021-01-25 18:11:59 INFO  PageOneFillingStepDefs:45 - Client chooses down payment source
-2021-01-25 18:12:00 INFO  PageOneFillingStepDefs:48 - Clients additional founds
-2021-01-25 18:12:00 INFO  PageOneFillingStepDefs:54 - Client clicks next button
+2021-02-17 10:00:57 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-17 10:00:57 INFO  LoginStepDefs:64 - Client enters valid email
+2021-02-17 10:00:57 INFO  LoginStepDefs:66 - Client enters valid password
+2021-02-17 10:00:57 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-17 10:01:00 INFO  PreapprovalPageFillingStepDefs:21 - Client opens the mortgage application
+2021-02-17 10:01:01 INFO  PreapprovalPageFillingStepDefs:37 - Client fills preapproval details with realtor and loan officer
+2021-02-17 10:01:01 INFO  PreapprovalPageFillingStepDefs:38 - Client entered realtor details
+2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:40 - Client fills estimated home price field
+2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:42 - Clients down payment amount
+2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:44 - Client chooses down payment source
+2021-02-17 10:01:03 INFO  PreapprovalPageFillingStepDefs:47 - Clients additional founds
+2021-02-17 10:01:03 INFO  PreapprovalPageFillingStepDefs:49 - Clients clicks next button
+2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:17 - Client fills personal info details without co-borrower
+2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:18 - Client entered first name
+2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:20 - Client entered last name

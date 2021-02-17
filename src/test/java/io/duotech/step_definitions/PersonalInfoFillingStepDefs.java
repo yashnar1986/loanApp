@@ -19,7 +19,19 @@ public class PersonalInfoFillingStepDefs {
 		pi.firstNameField.sendKeys("David");
 		logger.info("Client entered last name");
 		pi.lastNameField.sendKeys("Beckham");
-		
+		Select s = new Select(pi.suffixDropDown);
+		s.selectByVisibleText("Sr.");
+		pi.emailField.sendKeys("db7@gmail.com");
+		pi.dobField.sendKeys("01012000");
+		pi.ssnField.sendKeys("123-456-7890");
+		Select s1 = new Select(pi.maritalStatusDropDown);
+		s1.selectByVisibleText("Married");
+		pi.cellPhoneField.sendKeys("347-000-0000");
+		pi.homePhoneField.sendKeys("718-000-0000");
+		if(!pi.privacypolicyNoCheckbox.isSelected()) {
+			pi.privacypolicyNoCheckbox.click();
+		}
+		pi.nextButton.click();
 	}
 
 }

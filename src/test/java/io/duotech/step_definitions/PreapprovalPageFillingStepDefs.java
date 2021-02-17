@@ -1,5 +1,7 @@
 package io.duotech.step_definitions;
 
+
+import static org.junit.Assert.assertEquals;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.ui.Select;
 import io.cucumber.java.en.Then;
@@ -44,12 +46,15 @@ public class PreapprovalPageFillingStepDefs {
 		sel.selectByValue("Equity on Pending Sale (executed sales contract)");
 		logger.info("Clients additional founds");
 		pp.additionalFundsField.sendKeys("Saving account in foreign country");
+		logger.info("Clients clicks next button");
+		pp.nextButton.click();
 	}
 
-	@Then("Clint clicks next button")
-	public void clint_clicks_next_button() {
-		logger.info("Client clicks next button");
-		pp.nextButton.click();
+	@Then("Clients application should be successfully submitted")
+	public void clients_application_should_be_successfully_submitted() {
+	    String actual = pp.succesAlert.getText();
+	    String expected = "Application Submiited Successfully";
+	    assertEquals(expected, actual);
 	}
 
 }

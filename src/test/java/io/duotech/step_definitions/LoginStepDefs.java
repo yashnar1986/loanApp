@@ -1,21 +1,15 @@
 package io.duotech.step_definitions;
 
 import static org.junit.Assert.assertEquals;
-
 import java.util.List;
 import java.util.Map;
-
 import org.apache.log4j.Logger;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.duotech.pages.AccountPage;
 import io.duotech.pages.HomePage;
 import io.duotech.pages.RegisterPage;
-import io.duotech.utilities.ConfigReader;
 import io.duotech.utilities.DatabaseUtils;
-import io.duotech.utilities.Driver;
-import io.duotech.utilities.ExcelUtils;
 import io.duotech.utilities.LoggerUtils;
 
 public class LoginStepDefs {

@@ -35,5 +35,8 @@ public class PreapprovalPage {
 	
 	@FindBy (linkText = "Next")
 	public WebElement nextButton;
+	
+	@FindBy (xpath = "//div[@class='alert alert-succes']")
+	public WebElement succesAlert;
 
 }

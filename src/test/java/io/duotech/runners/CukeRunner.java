@@ -1,11 +1,9 @@
 package io.duotech.runners;
 
 import org.junit.runner.RunWith;
-
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.junit.CucumberOptions.SnippetType;
+
 
 @RunWith (Cucumber.class)
 @CucumberOptions (
@@ -20,7 +18,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		features = "src/test/resources/io/duotech/features",
 		glue = "io/duotech/step_definitions"
 //		,strict = true
-		,dryRun = true
+//		,dryRun = true
 		,monochrome =true
 		,stepNotifications = true
 //		,snippets = SnippetType.CAMELCASE
