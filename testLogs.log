@@ -1,15 +1,36 @@
-2021-02-17 10:00:57 INFO  MainPageStepDefs:22 - Navigating to a homepage
-2021-02-17 10:00:57 INFO  LoginStepDefs:64 - Client enters valid email
-2021-02-17 10:00:57 INFO  LoginStepDefs:66 - Client enters valid password
-2021-02-17 10:00:57 INFO  LoginStepDefs:73 - Client clicks login button
-2021-02-17 10:01:00 INFO  PreapprovalPageFillingStepDefs:21 - Client opens the mortgage application
-2021-02-17 10:01:01 INFO  PreapprovalPageFillingStepDefs:37 - Client fills preapproval details with realtor and loan officer
-2021-02-17 10:01:01 INFO  PreapprovalPageFillingStepDefs:38 - Client entered realtor details
-2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:40 - Client fills estimated home price field
-2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:42 - Clients down payment amount
-2021-02-17 10:01:02 INFO  PreapprovalPageFillingStepDefs:44 - Client chooses down payment source
-2021-02-17 10:01:03 INFO  PreapprovalPageFillingStepDefs:47 - Clients additional founds
-2021-02-17 10:01:03 INFO  PreapprovalPageFillingStepDefs:49 - Clients clicks next button
-2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:17 - Client fills personal info details without co-borrower
-2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:18 - Client entered first name
-2021-02-17 10:01:04 INFO  PersonalInfoFillingStepDefs:20 - Client entered last name
+2021-02-23 13:55:02 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:02 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:03 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:03 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:06 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:06 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base
+2021-02-23 13:55:08 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:08 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:08 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:08 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:09 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:10 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base
+2021-02-23 13:55:10 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:10 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:11 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:11 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:13 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:13 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base
+2021-02-23 13:55:14 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:14 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:14 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:14 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:16 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:16 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base
+2021-02-23 13:55:17 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:17 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:17 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:17 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:18 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:19 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base
+2021-02-23 13:55:19 INFO  MainPageStepDefs:22 - Navigating to a homepage
+2021-02-23 13:55:19 INFO  LoginStepDefs:90 - Client enters valid email
+2021-02-23 13:55:20 INFO  LoginStepDefs:92 - Client enters valid password
+2021-02-23 13:55:20 INFO  LoginStepDefs:73 - Client clicks login button
+2021-02-23 13:55:21 INFO  LoginStepDefs:100 - Client account page opens
+2021-02-23 13:55:21 INFO  LoginStepDefs:109 - Verifying name of acoount holder with data base

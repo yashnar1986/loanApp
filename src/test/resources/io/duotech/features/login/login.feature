@@ -9,12 +9,12 @@ Feature: Login functionality
     When Client enters valid email and password
     And Client clicks login button
     Then Client should be able to enter to his account page
-
+ @db
   Scenario: Check login functionality with valid credentionals and verify with DB
     When Client enters valid email "db7@gmail.com" and password "David723"
     And Client clicks login button
     Then Clients first name "David" and last name "Beckham" should displaed on his account page
-
+ @db
   Scenario Outline: Check login functionality with valid credentionals and verify with DB via DDT
     When Client enters valid email "<email address>" and password "<password>"
     And Client clicks login button

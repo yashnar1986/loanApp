@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		},
 					
-		tags = "@loan", //"@loan and @db", // "@smoke and @test"
+		tags = "@api",//"@login and @db", // "@smoke and @test"
 		features = "src/test/resources/io/duotech/features",
 		glue = "io/duotech/step_definitions"
 //		,strict = true

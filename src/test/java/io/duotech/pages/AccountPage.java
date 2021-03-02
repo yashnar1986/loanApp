@@ -18,6 +18,11 @@ public class AccountPage {
 	@FindBy (xpath = "//span[.='Mortgage Application']")
 	public WebElement mortgageAppMenu;
 	
+	@FindBy (xpath = "//span[.='Application List']")
+	public WebElement appListMenu;
+	
+	
+	
 	
 
 }

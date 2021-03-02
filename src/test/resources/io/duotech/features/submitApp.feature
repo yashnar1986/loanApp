@@ -6,7 +6,7 @@ Feature: Filling Application Functionality
     And Client clicks login button
     And Client clicks mortgage application menu
 
-  @loan
+
   Scenario: Client fills Preapproval Details page with realtor and officer
     And Client fills out the preapproval details
     And Client fills out the personal info details
